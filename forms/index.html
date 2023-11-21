@@ -16,7 +16,7 @@
             <!-- COMPONENT CODE -->
             <div class="container mx-auto my-4 px-4 lg:px-20">
 
-                <div class="w-full p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
+                <form action="http://34.131.78.227:8000/recruitment/submit" method="POST" class="w-full p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
                     <div class="flex flex-col justify-center items-center text-center">
                         <div class="flex  items-end justify-end w-48 h-48  z-10">
 
@@ -29,66 +29,66 @@
                     <div class="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
                         <input
                             class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                            type="text" placeholder="Full Name*" />
+                            type="text" placeholder="Full Name*" name="name"/>
                         <input
                             class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                            type="text" placeholder="Personal Email*" />
+                            type="text" placeholder="Personal Email*" name="personal_email"/>
                         <input
                             class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                            type="email" placeholder="Kiet Email*" />
+                            type="email" placeholder="Kiet Email*" name="kiet_email"/>
                         <input
                             class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                            type="number" placeholder="Phone*" />
+                            type="number" placeholder="Phone*" name="phone"/>
                         <input
                             class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                            type="text" placeholder="Library Id*" />
+                            type="text" placeholder="Library Id*" name="library_id"/>
                         <br>
                         <label for="domain "
-                            class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline">Select
+                            class="w-full text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline">Select
                             Domain*</label>
                         <select data-te-select-init
-                            class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline">
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                            <option value="4">Four</option>
-                            <option value="5">Five</option>
+                            class="w-full text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" name="domain">
+                            <option value="Web">Web Development</option>
+                            <option value="android">Android Development</option>
+                            <option value="ml">Machine Learning</option>
+                            <option value="xr">AR-VR</option>
+                            <option value="cp">CP</option>
                         </select>
-                        <label for="gender "
-                            class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline">Select
+                        <label for="gender"
+                            class="w-full text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline">Select
                             Gender*</label>
                         <select data-te-select-init
-                            class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline">
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                            <option value="4">Four</option>
-                            <option value="5">Five</option>
+                            class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" name="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
                         </select>
-
-
+                        <label for="desk"
+                            class="w-full text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline">Select
+                            Desk*</label>
+                        <select data-te-select-init
+                            class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" name="desk">
+                            <option value="g-block">G BLock</option>
+                            <option value="cafet">Cafet</option>
+                            <option value="auditorium">Auditorium</option>
+                            <option value="e-block">E Block</option>
+                        </select>
                     </div>
                     <div class="my-4 grid grid-cols-1 gap-5 md:grid-cols-2 mt-5 ">
 
-                        <label for="payment "
-                            class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline">Payment
+                        <label for="payment"
+                            class="w-full text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline">Payment
                             Mode*</label>
                         <select data-te-select-init
-                            class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline">
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                            <option value="4">Four</option>
-                            <option value="5">Five</option>
+                            class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" name="mode_of_payment">
+                            <option value="online">UPI</option>
+                            <option value="cash">Cash</option>
                         </select>
                     </div>
-                    <div class="my-2 w-1/2 lg:w-1/4">
-                        <button class="uppercase text-sm font-bold tracking-wide bg-blue-900 text-gray-100 p-3 rounded-lg w-full 
-                          focus:outline-none focus:shadow-outline">
-                            Submit
-                        </button>
+                    <div class="my-4 w-1/2 lg:w-1/4">
+                        <input class="uppercase text-sm font-bold tracking-wide bg-blue-900 text-gray-100 p-3 rounded-lg w-full 
+                          focus:outline-none focus:shadow-outline" value="Submit" type="submit"/>
                     </div>
-                </div>
+                </form>
 
                 <div class="w-full lg:-mt-96 lg:w-2/6 px-8 py-12 ml-auto bg-blue-900 rounded-2xl">
                     <div class="flex flex-col text-white">
