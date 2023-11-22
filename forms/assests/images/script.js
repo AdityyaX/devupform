@@ -27,11 +27,11 @@ function submitForm(e) {
 })
   .then((response) => {
     console.log(response);
-    window.location = "/forms/success.html"
+    window.location = "/success.html"
   })
   .catch((error) => {
     console.log(error);
-    window.location = "/forms/error.html"
+    window.location = "/error.html"
   });
 
 }
