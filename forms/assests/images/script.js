@@ -1,16 +1,37 @@
 
 document.getElementById("form").addEventListener("submit", submitForm);
 
-function submitForm() {
+console.log("from script")
+
+function submitForm(e) {
+    console.log("from function")
     e.preventDefault();
-    const name = document.getElementById("name");
-    const email = document.getElementById("email");
-    const kietMail = document.getElementById("kietemail");
-    const library = document.getElementById("libraryID");
-    const phone = document.getElementById("phone");
-    const domain = document.getElementById("domain");
-    const gender = document.getElementById("gender");
-    const desk = document.getElementById("desk");
-    const modePayment = document.getElementById("payment");
-    console.log(name, email, domain)
+    const name = document.getElementById("name").value;
+    const personal_email = document.getElementById("personal_email").value;
+    const kiet_email = document.getElementById("kiet_email").value;
+    const library_id = document.getElementById("library_id").value;
+    const phone = document.getElementById("phone").value;
+    const domain = document.getElementById("domain").value;
+    const gender = document.getElementById("gender").value;
+    const desk = document.getElementById("desk").value;
+    const mode_of_payment = document.getElementById("mode_of_payment").value;
+
+    fetch("http://34.131.78.227:8000/recruitment/submit", {
+    method: "POST",
+    body: JSON.stringify({
+    name, personal_email, kiet_email, library_id, phone, domain, gender, desk, mode_of_payment
+  }),
+  headers: {
+    "Content-type": "application/json; charset=UTF-8"
+  }
+})
+  .then((response) => {
+    console.log(response);
+    window.location = "/forms/success.html"
+  })
+  .catch((error) => {
+    console.log(error);
+    window.location = "/forms/error.html"
+  });
+
 }
