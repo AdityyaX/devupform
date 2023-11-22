@@ -16,7 +16,7 @@ function submitForm(e) {
     const desk = document.getElementById("desk").value;
     const mode_of_payment = document.getElementById("mode_of_payment").value;
 
-    fetch("http://34.131.78.227:8000/recruitment/submit", {
+    fetch("https://34.131.78.227:8000/recruitment/submit", {
     method: "POST",
     body: JSON.stringify({
     name, personal_email, kiet_email, library_id, phone, domain, gender, desk, mode_of_payment
