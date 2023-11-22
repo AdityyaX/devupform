@@ -16,7 +16,7 @@
             <!-- COMPONENT CODE -->
             <div class="container mx-auto my-4 px-4 lg:px-20">
 
-                <form action="" method="POST" id="form" class="w-full p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
+                <form action="" method="POST" id="form" class="w-full p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mx-auto rounded-2xl shadow-2xl">
                     <div class="flex flex-col justify-center items-center text-center">
                         <div class="flex  items-end justify-end w-48 h-48  z-10">
 
@@ -43,107 +43,57 @@
                             class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                             type="text" placeholder="Library Id*" name="library_id" id="library_id" required/>
                         <br>
-                        <label for="domain "
-                            class="w-full text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline">Select
-                            Domain*</label>
+                        
                         <select data-te-select-init
-                            class="w-full text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" name="domain" id="domain" required>
-                            <option value="none selected">Select Domain</option>
+                            class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" name="domain" id="domain" required>
+                            <option value="none selected" hidden>Select Domain</option>
                             <option value="Web">Web Development</option>
                             <option value="android">Android Development</option>
                             <option value="ml">Machine Learning</option>
                             <option value="xr">AR-VR</option>
                             <option value="cp">CP</option>
                         </select>
-                        <label for="gender"
-                            class="w-full text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline">Select
-                            Gender*</label>
+                        
                         <select data-te-select-init
                             class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" name="gender" id="gender" required>
-                            <option value="none selected">Select Gender</option>
+                            <option value="none selected" hidden>Select Gender</option>
                             <option value="male">Male</option>
                             <option value="female">Female</option>
                         </select>
-                        <label for="desk"
-                            class="w-full text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline">Select
-                            Desk*</label>
+                        
                         <select data-te-select-init
                             class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" name="desk" id="desk" required>
-                            <option value="none selected">Select Desk</option>
+                        
+                            <option value="none selected" hidden>Select Desk</option>
                             <option value="g-block">G BLock</option>
                             <option value="cafet">Cafet</option>
                             <option value="auditorium">Auditorium</option>
                             <option value="e-block">E Block</option>
                         </select>
-                    </div>
-                    <div class="my-4 grid grid-cols-1 gap-5 md:grid-cols-2 mt-5 ">
-
-                        <label for="payment"
-                            class="w-full text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline">Payment
-                            Mode*</label>
                         <select data-te-select-init
                             class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" name="mode_of_payment" id="mode_of_payment" required>
-                            <option value="none selected">Select mode</option>
+                            <option value="none selected" hidden>Payment mode*</option>
                             <option value="online">UPI</option>
                             <option value="cash">Cash</option>
                         </select>
                     </div>
+                    
+
+                        
+                        
+                    
                     <div class="my-4 w-1/2 lg:w-1/4">
                         <input class="uppercase text-sm font-bold tracking-wide bg-blue-900 text-gray-100 p-3 rounded-lg w-full 
                           focus:outline-none focus:shadow-outline" value="Submit" type="submit"/>
                     </div>
                 </form>
 
-                <div class="w-full lg:-mt-96 lg:w-2/6 px-8 py-12 ml-auto bg-blue-900 rounded-2xl">
-                    <div class="flex flex-col text-white">
-                        <h1 class="font-bold uppercase text-4xl my-4">Meet Us At</h1>
-                        <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                            tincidunt arcu diam,
-                            eu feugiat felis fermentum id. Curabitur vitae nibh viverra, auctor turpis sed, scelerisque
-                            ex.
-                        </p>
-
-                        <div class="flex my-4 w-2/3 lg:w-1/2">
-                            <div class="flex flex-col">
-                                <i class="fas fa-map-marker-alt pt-2 pr-2" />
-                            </div>
-                            <div class="flex flex-col">
-                                <h2 class="text-2xl">Lorem, ipsum dolor.</h2>
-                                <p class="text-gray-400">Lorem ipsum dolor sit amet.</p>
-                            </div>
-                        </div>
-
-                        <div class="flex my-4 w-2/3 lg:w-1/2">
-                            <div class="flex flex-col">
-                                <i class="fas fa-phone-alt pt-2 pr-2" />
-                            </div>
-                            <div class="flex flex-col">
-                                <h2 class="text-2xl">Call Us</h2>
-                                <p class="text-gray-400">Tel: xxx-xxx-xxx</p>
-                                <p class="text-gray-400">Fax: xxx-xxx-xxx</p>
-                            </div>
-                        </div>
-
-                        <div class="flex my-4 w-2/3 lg:w-1/2">
-                            <a href="" target="_blank" rel="noreferrer"
-                                class="rounded-full bg-white h-10 w-10 inline-block mx-1 text-center pt-1">
-                                <img class=" mx-auto my-auto h-4/5 w-4/5 " src="assests/images/x-twitter.svg"
-                                    alt="link">
-                            </a>
-                            <a href="" target="_blank" rel="noreferrer"
-                                class="rounded-full bg-white h-10 w-10 inline-block mx-1 text-center pt-1">
-                                <img class=" mx-auto my-auto h-4/5 w-4/5 "
-                                    src="assests/images/linkedin-161-svgrepo-com.svg" alt="link">
-
-                            </a>
-                        </div>
-                    </div>
-                </div>
+               
             </div>
             <!-- COMPONENT CODE -->
         </div>
 
-        <!-- BUY ME A PIZZA AND HELP SUPPORT OPEN-SOURCE RESOURCES -->
+        
         <div class="flex items-end justify-end w-20 h-20 fixed bottom-0 right-0 mb-4 mr-4 z-10">
             <div>
                 <img class="object-cover object-center w-full h-full rounded-full"
